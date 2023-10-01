@@ -1,0 +1,17 @@
+﻿body{
+    padding: 0.25em;
+    min-width:20em;
+    overflow-y:scroll;
+}
+
+h3 {
+    text-align:center;
+}
+
+button{
+    display: block;
+    width:fit-content;
+    text-align: center;
+    align-content: center;
+    margin: 2px auto;
+}

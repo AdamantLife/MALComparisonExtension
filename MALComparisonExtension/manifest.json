@@ -1,0 +1,38 @@
+{
+  "name": "MAL Comparison",
+  "description": "Compare Characters and Staff between Animes on MyAnimeList",
+  "version": "0.1",
+  "manifest_version": 3,
+
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type":"module"
+  },
+  "options_page": "options.html",
+  "action":{
+    "default_icon":{
+      "16":"images/icon16.png",
+      "32":"images/icon32.png",
+      "48":"images/icon48.png",
+      "128":"images/icon128.png"
+    },
+    "default_title":"MAL Comparison",
+    "default_popup":"popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://myanimelist.net/anime/*"],
+      "js": ["content_scripts/compare.js"],
+      "run_at": "document_end"}
+  ]
+}

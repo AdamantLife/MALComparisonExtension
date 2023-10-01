@@ -1,0 +1,14 @@
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+th{
+    max-width: 15em;
+}
+
+td{
+    text-align: center;
+}
